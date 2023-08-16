@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=1170" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-aside.css" />
+    <!-- js -->
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/script-menu.js" defer></script>
+    <script src="assets/js/script-main.js" defer></script>
+    <script src="assets/js/script-registration.js" defer></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat+Alternates:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <!-- body -->
+  <body>
+    <!-- header -->
+    <header id="headerMain">
+      <section id="logo">
+        <img id="mainLogo" src="/assets/images/logonew.jpg" />
+        <nav id="lang" class="lang">
+          <div class="planet">
+            <img
+              class="planet"
+              src="/assets/images/planet1.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <!-- <a class="interLang" href="#">ENG</a> -->
+          <a class="interLang" href="#">RU</a>
+          <!-- <a class="interLang" href="#">עברית</a> -->
+        </nav>
+      </section>
+      <nav class="navbar">
+        <div class="burger">☰</div>
+        <a class="interNavbar" id="home">Главная</a>
+        <a class="interNavbar" id="school">Школа</a>
+        <a class="interNavbar" id="shop">Магазин</a>
+        <a class="interNavbar" id="news">Новости</a>
+        <a class="interNavbar" id="contacts">Контакты</a>
+      </nav>
+      <nav id="aRight">
+        <a id="logoReg" href="#"
+          ><img id="logoRegImg" src="/assets/images/check-logo.png"
+        /></a>
+        <a id="logoCart" href="#"
+          ><img
+            id="logoCartImg"
+            src="/assets/images/cart-logo.png"
+            alt=""
+            srcset=""
+        /></a>
+      </nav>
+    </header>
+    <!-- main -->
+    <main></main>
+    <!-- footer -->
+    <footer>
+      <img src="/assets/images/logonew.jpg" alt="" srcset="" />
+      <div id="all">
+        <img src="/assets/images/Vector-youtube-footer.svg" alt="" />
+        <img src="/assets/images/Vector-telegram-footer.svg" alt="" />
+        <img src="/assets/images/Vector-facebook-footer.svg" alt="" />
+        <img src="/assets/images/Vector-v-footer.svg" alt="" />
+        <img src="/assets/images/Vector-instagram-footer.svg" alt="" />
+        <h4>2023</h4>
+      </div>
+    </footer>
+    <!-- aside regForLesson -->
+    <aside id="regForLesson" style="margin-top: 50px;">
+      <span class="crossAsReg">&times;</span>
+      <div id="twoCol">
+        <div id="item1Col">
+          <h1>Регистрация на занятие</h1>
+          <form>
+            <input
+              class="custom-checkbox"
+              type="radio"
+              id="check1"
+              name="lesson"
+              value="check1"
+            />
+            <label for="check1">На пробное занятие</label><br />
+            <input
+              class="custom-checkbox"
+              type="radio"
+              id="check2"
+              name="lesson"
+              value="check2"
+            />
+            <label for="check2">На 2023 учебный год</label><br />
+            <label id="email" for="email">Эл.адрес</label>
+            <input type="email" id="email" name="email" /><br />
+            <label id="name" for="name">Имя Фамилия</label>
+
+            <input type="name" id="name" name="name" /><br />
+            <br />
+            <input
+              class="custom-checkbox"
+              type="radio"
+              id="check3"
+              name="gender"
+              value="Bike"
+            />
+            <label for="check3">Мужской пол</label><br />
+            <input
+              class="custom-checkbox"
+              type="radio"
+              id="check4"
+              name="gender"
+              value="Car"
+            />
+            <label for="check4">Женский пол</label><br />
+            <label id="dateOfBirth" for="dateOfBirth">Дата рождения</label>
+            <input
+              type="dateOfBirth"
+              id="dateOfBirth"
+              name="dateOfBirth"
+            /><br />
+            <label id="phone" for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required /><br />
+            <label id="options" for="options">Какое направление</label>
+            <select name="options" id="options">
+              <option value="drum">Барабаны</option>
+              <option value="guitar">Гитара</option>
+              <option value="solo">Вокал</option>
+              <option value="fono">Фортепиано</option></select
+            ><br />
+            <label id="comment" for="comment">Комментарий</label>
+            <textarea
+              id="comment"
+              rows="2"
+              cols="50"
+              name="comment"
+              form="usrform"
+            >
+                  Напишите здесь...</textarea
+            >
+            <br /><br />
+            <input
+              type="checkbox"
+              class="custom-checkbox"
+              id="check5"
+              value="check1"
+            />
+            <label id="check5" for="check5"
+              >Я прочитал и подтверждаю регистрацию</label
+            ><br />
+
+            <button id="btnRegForLessonOK" type="submit" class="registerbtn">
+              Записаться
+            </button>
+          </form>
+        </div>
+
+        <div id="item2Col">
+          <img src="/assets/images/drum-registration.png" alt="" srcset="" />
+          <div>
+            <h2 class="mont-alt">Вернуться на главную страницу</h2>
+            <img class="butHand" src="/assets/images/butHand.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- aside background -->
+    <aside id="background"></aside>
+    <!-- aside itemAddToCart -->
+    <aside id="itemAddToCart">
+      <div>
+        <span id="crossConPut">&times;</span>
+        <h2 class="inter">Товар добавлен в корзину!</h2>
+        <div>
+          <div class="foto-big"></div>
+          <div id="div2Add">
+            <h2 class="fender">FENDER CD-60 Black</h2>
+            <h2 class="mont-alt costGuit1">1500 ₪</h2>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!--aside login -->
+    <aside id="login">
+      <span id="crossLogin">&times;</span>
+      <h1>Вход</h1>
+      <h3>Если у вас есть учетная запись, пожалуйста, войдите в систему</h3>
+      <form name="myForm" action="/action_page.php">
+        <label for="email2">Электронный адрес</label><br />
+        <input
+          type="email"
+          id="email2"
+          name="email"
+          placeholder="E-mail"
+        /><br />
+        <label for="pwd2">Пароль</label><br />
+        <input
+          type="password"
+          id="pwd2"
+          name="pwd"
+          minlength="8"
+          placeholder="Пароль"
+        /><br />
+        <div>
+          <h4>Забыли пароль?</h4>
+          <input class="inpLogin" id="sbmt2" type="submit" value="Войти" />
+        </div>
+      </form>
+      <h4>
+        У вас еще нет аккаунта? <br />
+        Пройдите процесс регистрации
+      </h4>
+      <button id="butLoginReg" type="submit" class="registerbtn">
+        Зарегистрироваться
+      </button>
+
+      <div id="hr">
+        <hr style="width: 40%" />
+        <h4>или</h4>
+        <hr style="width: 40%" />
+      </div>
+      <button class="butGoogle" type="submit">
+        <img src="/assets/images/google.png" alt="" srcset="" />
+      </button>
+      <button class="butFacebook" type="submit">
+        <img src="/assets/images/facebook.png" alt="" srcset="" />
+      </button>
+    </aside>
+    <!--aside registration -->
+    <aside id="registration">
+      <span id="crossReg2">&times;</span>
+      <h1>Регистрация</h1>
+      <h3>Введите данные, необходимые для создания учетной записи</h3>
+      <form action="/action_page.php">
+        <label for="email3">Электронный адрес</label><br />
+        <input
+          type="email"
+          id="email3"
+          name="email"
+          placeholder="E-mail"
+        /><br />
+        <label for="name3">Имя</label><br />
+        <input type="name" id="name3" name="name" placeholder="Имя" /><br />
+        <label for="pwd3">Пароль</label><br />
+        <input
+          type="password"
+          id="pwd3"
+          name="pwd"
+          minlength="8"
+          placeholder="Пароль"
+        /><br />
+        <label for="pwd">Повторите пароль</label><br />
+        <input
+          type="password"
+          id="pwd"
+          name="pwd"
+          minlength="8"
+          placeholder="Пароль"
+        /><br />
+        <div>
+          <input id="sbmt3" type="submit" placeholder="Зарегистрироваться" />
+        </div>
+      </form>
+      <h4>
+        У вас уже есть аккаунт?<br />
+        Войдите в свою учетную запись
+      </h4>
+      <button id="submitRegBut" type="submit" class="registerbtn">Войти</button>
+      <div id="hr">
+        <hr style="width: 40%" />
+        <h4>или</h4>
+        <hr style="width: 40%" />
+      </div>
+      <button class="butGoogle" type="submit">
+        <img src="/assets/images/google2.png" alt="" srcset="" />
+      </button>
+      <button class="butFacebook" type="submit">
+        <img src="/assets/images/facebook2.png" alt="" srcset="" />
+      </button>
+    </aside>
+    <!-- aside wrongPass -->
+    <aside id="wrongPass">
+      <span id="crossWrongPass">&times;</span>
+      <h1>Вход</h1>
+      <h3>Если у вас есть учетная запись, пожалуйста, войдите в систему</h3>
+      <form action="/action_page.php">
+        <label for="email4">Электронный адрес</label><br />
+        <input
+          type="email"
+          id="email4"
+          name="email"
+          placeholder="E-mail"
+        /><br />
+        <label for="pwd4">Пароль</label><br />
+        <input
+          type="password"
+          id="pwd4"
+          name="pwd"
+          minlength="8"
+          placeholder="Пароль"
+        /><br />
+        <div>
+          <h4>Забыли пароль?</h4>
+          <h4 id="wrong">E-mail или пароль указаны неверно</h4>
+
+          <input class="inpLogin" type="submit" placeholder="Войти" />
+        </div>
+      </form>
+      <h4>
+        У вас еще нет аккаунта? <br />
+        Пройдите процесс регистрации
+      </h4>
+      <button type="submit" class="registerbtn">Зарегистрироваться</button>
+
+      <div id="hr">
+        <hr style="width: 40%" />
+        <h4>или</h4>
+        <hr style="width: 40%" />
+      </div>
+      <button class="butGoogle" type="submit">
+        <img src="/assets/images/google.png" alt="" srcset="" />
+      </button>
+      <button class="butFacebook" type="submit">
+        <img src="/assets/images/facebook.png" alt="" srcset="" />
+      </button>
+    </aside>
+    <!-- aside productReview -->
+    <aside id="productReview">
+      <span id="crossReview">&times;</span>
+      <h3 class="inter">Напишите свой отзыв о продукте:</h3>
+      <textarea id="comment1" rows="1" cols="50" name="comment" form="usrform">
+      Заголовок*</textarea
+      >
+      <br />
+      <textarea id="comment2" rows="6" cols="50" name="comment" form="usrform">
+      Текст отзыва*</textarea
+      >
+      <br /><br />
+      <div>
+        <h4 class="inter">Ваша оценка:</h4>
+        <div class="rating-area">
+          <input type="radio" id="star-5" name="rating" value="5" />
+          <label for="star-5" title="Оценка «5»"></label>
+          <input type="radio" id="star-4" name="rating" value="4" />
+          <label for="star-4" title="Оценка «4»"></label>
+          <input type="radio" id="star-3" name="rating" value="3" />
+          <label for="star-3" title="Оценка «3»"></label>
+          <input type="radio" id="star-2" name="rating" value="2" />
+          <label for="star-2" title="Оценка «2»"></label>
+          <input type="radio" id="star-1" name="rating" value="1" />
+          <label for="star-1" title="Оценка «1»"></label>
+        </div>
+      </div>
+      <button id="commentToThank" type="submit" class="registerbtn">
+        Оставить отзыв
+      </button>
+    </aside>
+    <!-- aside productReview2 -->
+    <aside id="productReview2">
+      <span id="crossReview">&times;</span>
+      <h3 class="inter">
+        Авторизуйтесь, <br />
+        чтобы оставить отзыв
+      </h3>
+      <form action="/action_page.php">
+        <label for="email5">Электронный адрес</label><br />
+        <input type="email" id="email5" name="email" value="E-mail" /><br />
+        <label for="pwd5">Пароль</label><br />
+        <input
+          type="password"
+          id="pwd5"
+          name="pwd"
+          minlength="8"
+          value="Пароль"
+        /><br />
+        <div>
+          <h4>Забыли пароль?</h4>
+          <input class="inpLogin" id="sbmt5" type="submit" value="Войти" />
+        </div>
+      </form>
+      <h4>
+        У вас еще нет аккаунта? <br />
+        Пройдите процесс регистрации
+      </h4>
+      <button type="submit" class="registerbtn">Зарегистрироваться</button>
+
+      <div id="hr">
+        <hr style="width: 40%" />
+        <h4>или</h4>
+        <hr style="width: 40%" />
+      </div>
+      <button class="butGoogle" type="submit">
+        <img src="/assets/images/google.png" alt="" srcset="" />
+      </button>
+      <button class="butFacebook" type="submit">
+        <img src="/assets/images/facebook.png" alt="" srcset="" />
+      </button>
+    </aside>
+    <!-- aside thankYou1 -->
+    <aside id="thankYou1">
+      <span id="crossThank">&times;</span>
+      <h3 class="mont-alt">Спасибо, что помогаете нам стать лучше!</h3>
+      <img id="thank2" src="/assets/images/thank-you.png" alt="" srcset="" />
+      <button id="goToHomeThank" type="submit" class="registerbtn">
+        Вернуться на главную
+      </button>
+    </aside>
+    <!-- aside confirmation -->
+    <aside id="confirmation">
+      <div>
+        <span id="crossCon">&times;</span>
+        <h2 class="inter">Подтверждение заказа</h2>
+        <div>
+          <h4 class="inter gray">Оплата:</h4>
+          <h4 class="inter black">Картой</h4>
+        </div>
+        <div>
+          <h4 class="inter gray">Доставка::</h4>
+          <h4 class="inter black">12-14 января</h4>
+        </div>
+        <div>
+          <h4 class="inter gray">Адрес:</h4>
+          <h4 class="inter black">г,Хайфа Эйлат Ачи 26</h4>
+        </div>
+        <button id="butRegCon" type="submit" class="registerbtn">
+          Подтвердить
+        </button>
+      </div>
+    </aside>
+    <!-- aside myBasket -->
+    <aside id="asideMyBasket">
+      <section class="newsEvents">
+        <h1 class="mont-alt">Моя корзина</h1>
+        <span id="close">&times;</span>
+      </section>
+      <section class="myBasket">
+        <div class="total">
+          <h1 class="inter">Итого:</h1>
+          <h1 id="totalMyBasket" class="inter">0 ₪</h1>
+        </div>
+        <div id="divAddDut">
+          <button id="butAdd1" type="submit" class="openReg">
+            Оформить заказ
+          </button>
+          <button id="butAdd2" type="submit">
+            Продолжить покупки
+          </button>
+        </div>
+        <div id="whatElse">
+          <h2 class="mont-alt">Может что-то еще?</h2>
+          <div id="elseGal">
+            <div class="elseItem"><img src="/assets/images/else1.jpg" /></div>
+            <div class="elseItem"><img src="/assets/images/else2.jpg" /></div>
+            <div class="elseItem"><img src="/assets/images/else3.jpg" /></div>
+            <div class="elseItem"><img src="/assets/images/else4.jpg" /></div>
+            <div class="elseItem"><img src="/assets/images/else5.jpg" /></div>
+            <div class="elseItem"><img src="/assets/images/else6.jpg" /></div>
+          </div>
+        </div>
+      </section>
+      <section class="goHome">
+        <div>
+          <img class="sticks" src="/assets/images/sticks.png" alt="" />
+          <h2 class="mont-alt">Вернуться на главную страницу</h2>
+          <img class="butHand" src="/assets/images/butHand.png" alt="" />
+        </div>
+      </section>
+    </aside>
+  </body>
+</html>

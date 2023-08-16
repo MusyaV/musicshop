@@ -1,0 +1,1374 @@
+$background: linear-gradient(
+  180deg,
+  rgba(22, 22, 22, 0.9) 0%,
+  rgba(22, 22, 22, 0.9) 100%
+);
+$boxshadow: 9.9px 9.9px 9.9px #000000,
+  inset 9.9px 9.9px 33px rgba(55, 55, 55, 0.25),
+  inset -6.6px -6.6px 33px rgba(98, 98, 98, 0.25);
+
+// aside background
+aside#background {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #0000009d;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+}
+
+// aside regForLesson
+aside#regForLesson {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  width: 800px;
+  height: 680px;
+  background: linear-gradient(
+    180deg,
+    rgba(22, 22, 22, 0.9) 0%,
+    rgba(22, 22, 22, 0.9) 100%
+  );
+
+  box-shadow: 9.85075px 9.85075px 9.85075px #000000,
+    inset 9.85075px 9.85075px 32.8358px rgba(55, 55, 55, 0.25),
+    inset -6.56716px -6.56716px 32.8358px rgba(98, 98, 98, 0.25);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  @media screen and (max-width: 1000px) {
+    height: auto;
+    width: 500px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 350px;
+  }
+
+  & > span {
+    color: gray;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    @media screen and (max-width: 600px) {
+      float: none;
+      padding-left: 330px;
+    }
+    @media screen and (max-width: 400px) {
+      float: none;
+      padding-left: 200px;
+    }
+  }
+  & > span:hover {
+    color: #f15c2d;
+  }
+  & > div#twoCol {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 100%;
+    }
+    & > div#item1Col {
+      & > h1 {
+        font-family: "Montserrat Alternates";
+        font-style: normal;
+        color: #f05a2a;
+        font-size: 20px;
+      }
+      & > form {
+        @media screen and (max-width: 600px) {
+          width: 400px;
+        }
+        & > input {
+          margin-top: 15px;
+          width: 20px;
+          height: 20px;
+          border: 1px solid #eff0f2;
+          border-radius: 12px;
+          padding: 13px 10px;
+          margin-top: 15px;
+          font-size: 10px;
+          background: #d9d9d9;
+        }
+        & > label {
+          font-family: "Inter";
+          color: #ffffff;
+          font-size: 12px;
+          padding-left: 0px;
+          padding-bottom: 20px;
+        }
+        & > label#email {
+          padding: 0px;
+        }
+        & > input#email {
+          width: 70%;
+          @media screen and (max-width: 400px) {
+            width: 50%;
+          }
+        }
+        & > label#name {
+          padding: 0px;
+        }
+        & > input#name {
+          width: 63%;
+          @media screen and (max-width: 400px) {
+            width: 42%;
+          }
+        }
+        & > label#dateOfBirth {
+          padding: 0px;
+        }
+        & > input#dateOfBirth {
+          width: 60%;
+          @media screen and (max-width: 400px) {
+            width: 40%;
+          }
+        }
+        & > label#phone {
+          padding: 0px;
+        }
+        & > input#phone {
+          width: 69%;
+          @media screen and (max-width: 400px) {
+            width: 50%;
+          }
+        }
+        & > label#options {
+          padding: 0px;
+        }
+        & > select#options {
+          width: 54%;
+          margin-top: 15px;
+          height: 28px;
+          border: 1px solid #eff0f2;
+          border-radius: 12px;
+          font-size: 10px;
+          background: #d9d9d9;
+          padding: 5px;
+          @media screen and (max-width: 400px) {
+            width: 34%;
+          }
+        }
+        & > label#comment {
+          padding: 0px;
+          margin-bottom: 20px;
+        }
+        & > textarea#comment {
+          width: 62%;
+          margin-top: 15px;
+          border: 1px solid #eff0f2;
+          border-radius: 12px;
+          font-size: 10px;
+          background: #d9d9d9;
+          padding: 5px;
+          @media screen and (max-width: 400px) {
+            width: 43%;
+          }
+        }
+        & > label#check5 {
+          padding: 0px;
+          @media screen and (max-width: 400px) {
+            width: 70%;
+          }
+        }
+        & > button.registerbtn {
+          cursor: pointer;
+          padding: 7px;
+          width: 150px;
+          background: linear-gradient(
+            296.64deg,
+            #de5435 11.25%,
+            #ff744d 95.56%
+          );
+
+          box-shadow: 4px 4px 9.9px #541c0a;
+          border-radius: 10px;
+          font-family: "Inter";
+          font-size: 12px;
+          margin: 10px 0px;
+          color: white;
+        }
+        & > button.registerbtn:hover {
+          background: linear-gradient(
+            296.64deg,
+            #9f321a 11.25%,
+            #ff5729 95.56%
+          );
+          box-shadow: -4px -3px 10px 5px rgba(195, 145, 114, 0.35);
+        }
+      }
+    }
+    & > div#item2Col {
+      & > img {
+        width: 350px;
+        margin-bottom: 50px;
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
+      }
+      & > div {
+        display: flex;
+        & > h2 {
+          font-size: 15px;
+          text-align: center;
+          color: #f8f8f8;
+          margin-top: 30px;
+          @media screen and (max-width: 1000px) {
+            margin-top: 0px;
+          }
+        }
+        & > img.butHand {
+          width: 60px;
+          height: 60px;
+          cursor: pointer;
+          margin: 10px;
+          margin-right: 20%;
+          margin-top: 15px;
+          @media screen and (max-width: 1000px) {
+            margin-top: 0px;
+          }
+        }
+        & > img.butHand:hover {
+          box-shadow: 0px 0px 10px 5px rgba(195, 145, 114, 0.35);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+// aside item add to cart
+aside#itemAddToCart {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0px;
+  top: 455px;
+  padding-bottom: 20px;
+  @media screen and (max-width: 400px) {
+    width: 380px;
+    left: 10px;
+  }
+  & > div {
+    width: 500px;
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    & > span#crossConPut {
+      color: gray;
+      cursor: pointer;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      @media screen and (max-width: 400px) {
+        float: none;
+        padding-left: 200px;
+      }
+    }
+    & > span#crossConPut:hover {
+      color: #f15c2d;
+    }
+    & > h2 {
+      color: #333333;
+      font-size: 17px;
+      padding-top: 20px;
+      padding-left: 20px;
+      @media screen and (max-width: 400px) {
+        width: 80%;
+      }
+    }
+    & > div {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 35% 65%;
+      @media screen and (max-width: 400px) {
+        width: 350px;
+        grid-template-columns: 50% 50%;
+        padding-left: 10px;
+      }
+      & > div.foto-big {
+        background-image: url(/assets/images/fender1.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 159.2px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 3px solid #ff5729;
+      }
+      & > div.foto-big:hover {
+        border: 4px solid #ff5729;
+      }
+      & > div#div2Add {
+        display: grid;
+        & > h2.fender {
+          font-weight: bold;
+          margin-top: 10px;
+          font-size: 20px;
+          color: #040404;
+          font-family: "Inter";
+          padding: 0px;
+          margin: 0px;
+          padding-left: 10px;
+        }
+        & > div.shopCart {
+          display: none;
+          color: #333333;
+          & > h5 {
+            border: 1px solid #33333374;
+          }
+        }
+        & > h2.mont-alt {
+          margin: 0px;
+          padding: 5px 14px;
+          font-size: 20px;
+          text-align: left;
+        }
+        & > div#divAddDut {
+          display: flex;
+          gap: 5px;
+
+          & > button.openReg {
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-family: "Inter";
+            font-size: 10px;
+            color: white;
+            border: none;
+            margin-left: 8px;
+          }
+          & > button#butAdd1 {
+            background: linear-gradient(
+              296.64deg,
+              #de5435 11.25%,
+              #ff744d 95.56%
+            );
+          }
+          & > button#butAdd1:hover {
+            background: linear-gradient(
+              296.64deg,
+              #9f321a 11.25%,
+              #ff5729 95.56%
+            );
+            box-shadow: 0px 0px 10px 5px rgb(195, 145, 114);
+            color: white;
+            border: 2px solid #9f321a;
+          }
+          & > button#butAdd2 {
+            font-family: "Inter";
+            font-size: 12px;
+            border-radius: 10px;
+            border: 1px solid #33333374;
+            color: #040404;
+            padding: 5px 10px;
+            cursor: pointer;
+          }
+          & > button#butAdd2:hover {
+            background: linear-gradient(
+              296.64deg,
+              #9f321a 11.25%,
+              #ff5729 95.56%
+            );
+            box-shadow: 0px 0px 10px 5px rgb(195, 145, 114);
+            color: white;
+            border: 2px solid #9f321a;
+          }
+        }
+      }
+    }
+  }
+}
+// aside login
+aside#login {
+  padding: 20px 20px;
+  width: 400px;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 600px) {
+    width: 320px;
+    padding: 20px 20px;
+  }
+  & > span {
+    color: gray;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  & > span:hover {
+    color: #f15c2d;
+  }
+  & > h1 {
+    font-size: 28px;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    margin: 0px;
+  }
+  & > h3 {
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    margin: 0px 50px;
+  }
+  & > form {
+    padding: 10px;
+    & > input {
+      width: 100%;
+      border: 1px solid #eff0f2;
+      border-radius: 12px;
+      color: #9095a9;
+      padding: 5px 10px;
+      margin-top: 5px;
+      font-size: 10px;
+    }
+    & > label {
+      font-family: "Inter";
+      font-size: 12px;
+    }
+    & > div {
+      text-align: center;
+      & > h4 {
+        cursor: pointer;
+        text-align: center;
+        font-family: "Inter";
+        font-size: 12px;
+        color: #dd5327;
+      }
+      & > h4:hover {
+        color: #000000;
+        font-weight: bold;
+      }
+    }
+  }
+  & > h4 {
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 11px;
+    margin: 5px 40px;
+    color: #9095a9;
+  }
+  & > div#hr {
+    display: flex;
+    margin: 0px 20px;
+    gap: 5px;
+    padding-left: 30px;
+    hr {
+      border: 1px solid #9095a9;
+    }
+    h4 {
+      color: #9095a9;
+      font-size: 15px;
+    }
+  }
+}
+//  aside registration
+aside#registration {
+  padding: 20px 20px;
+  width: 400px;
+  height: 670px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 600px) {
+    padding: 20px 20px;
+    width: 320px;
+  }
+  & > span {
+    color: gray;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  & > span:hover {
+    color: #f15c2d;
+  }
+  & > h1 {
+    font-size: 28px;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    margin: 0px;
+  }
+  & > h3 {
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    margin: 0px 50px;
+  }
+  & > form {
+    padding: 10px;
+    & > input {
+      width: 100%;
+      border: 1px solid #eff0f2;
+      border-radius: 12px;
+      color: #9095a9;
+      padding: 5px 10px;
+      margin-top: 5px;
+      font-size: 10px;
+    }
+
+    & > label {
+      font-family: "Inter";
+      font-size: 12px;
+    }
+    & > div {
+      text-align: center;
+      & > h4 {
+        cursor: pointer;
+        text-align: center;
+        font-family: "Inter";
+        font-size: 12px;
+        color: #dd5327;
+      }
+      & > input#sbmt3 {
+        font-size: 13px;
+        padding: 5px;
+        width: 180px;
+        background: linear-gradient(296.64deg, #de5435 11.25%, #ff744d 95.56%);
+        border-radius: 20px;
+        border-color: #ff744d;
+        color: white;
+        cursor: pointer;
+      }
+      & > input#sbmt3:hover {
+        background: linear-gradient(296.64deg, #9f321a 11.25%, #ff5729 95.56%);
+        box-shadow: 0px 0px 10px 5px rgba(195, 145, 114, 0.7);
+      }
+    }
+  }
+  & > h4 {
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 11px;
+    margin: 5px 40px;
+    color: #9095a9;
+  }
+  & > button#submitRegBut {
+    cursor: pointer;
+    padding: 7px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #f4f5f9;
+    border: 1px solid #b7b8c5;
+    font-family: "Inter";
+    font-size: 12px;
+    margin: 10px 40px;
+    color: #686877;
+  }
+  & > button#submitRegBut:hover {
+    color: white;
+    background: linear-gradient(296.64deg, #9f321a 11.25%, #ff5729 95.56%);
+    box-shadow: 0px 0px 10px 5px rgba(195, 145, 114, 0.35);
+  }
+  & > div#hr {
+    display: flex;
+    margin: 0px 20px;
+    gap: 5px;
+    padding-left: 30px;
+    hr {
+      border: 1px solid #9095a9;
+    }
+    h4 {
+      color: #9095a9;
+      font-size: 15px;
+    }
+  }
+  & > button#butGoogle2 {
+    border-radius: 20px;
+    margin: 10px 40px;
+    padding: 7px;
+    width: 80%;
+    background-color: white;
+    border: 1px solid #e4e7ee;
+    box-shadow: 0px 2px 4px rgba(43, 90, 99, 0.06);
+    img {
+      width: 70%;
+    }
+  }
+  & > button#butGoogle2:hover {
+    background-color: #4867aa6b;
+    cursor: pointer;
+  }
+  & > button#butFacebook2 {
+    border-radius: 20px;
+    margin: 10px 40px;
+    padding: 7px;
+    width: 80%;
+    background: #4867aa;
+    border: 1px solid #e4e7ee;
+    img {
+      width: 90%;
+    }
+  }
+  & > button#butFacebook2:hover {
+    background-color: #1a2d57e9;
+    cursor: pointer;
+  }
+}
+// aside wrongPass
+aside#wrongPass {
+  padding: 40px 20px;
+  position: relative;
+  width: 400px;
+  height: 640px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  & > span {
+    color: gray;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  & > span:hover {
+    color: #f15c2d;
+  }
+  & > h1 {
+    font-size: 28px;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    margin: 0px;
+  }
+  & > h3 {
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    margin: 0px 50px;
+  }
+
+  & > form {
+    padding: 10px;
+    & > input {
+      width: 100%;
+      border: 1px solid #eff0f2;
+      border-radius: 12px;
+      color: #9095a9;
+      padding: 5px 10px;
+      margin-top: 5px;
+      font-size: 10px;
+    }
+    & > label {
+      font-family: "Inter";
+      font-size: 12px;
+    }
+    & > div {
+      text-align: center;
+      & > h4 {
+        cursor: pointer;
+        text-align: center;
+        font-family: "Inter";
+        font-size: 12px;
+        color: #dd5327;
+      }
+      & > h4#wrong {
+        cursor: pointer;
+        text-align: center;
+        font-family: "Inter";
+        font-size: 12px;
+        color: #dd5327;
+        background: rgba(221, 83, 39, 0.2);
+        border: 1px solid #eb5783;
+        border-radius: 8px;
+        padding: 8px;
+      }
+    }
+  }
+  & > h4 {
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 11px;
+    margin: 5px 40px;
+    color: #9095a9;
+  }
+
+  & > div#hr {
+    display: flex;
+    margin: 0px 20px;
+    gap: 5px;
+    padding-left: 30px;
+    hr {
+      border: 1px solid #9095a9;
+    }
+    h4 {
+      color: #9095a9;
+      font-size: 15px;
+    }
+  }
+  & > button#butGoogle {
+    background-color: white;
+    border: 1px solid #e4e7ee;
+    box-shadow: 0px 2px 4px rgba(43, 90, 99, 0.06);
+    img {
+      width: 40%;
+    }
+  }
+  & > button#butFacebook {
+    background: #4867aa;
+    border: 1px solid #e4e7ee;
+    img {
+      width: 60%;
+    }
+  }
+}
+// aside product review
+aside#productReview {
+  padding: 40px 20px;
+  position: relative;
+  width: 380px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 400px) {
+    left: 10px;
+    top: 100px;
+    transform: none;
+  }
+  & > span {
+    color: gray;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  & > span:hover {
+    color: #f15c2d;
+  }
+  & > h3 {
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+  }
+  & > textarea#comment1 {
+    width: 100%;
+
+    font-size: 10px;
+    border: 1px solid #b7b8c5;
+    border-radius: 40px;
+    padding: 10px 0px;
+    color: #b7b8c5;
+  }
+  & > textarea#comment2 {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 10px;
+    border: 1px solid #b7b8c5;
+    border-radius: 15px;
+    padding: 10px 0px;
+    color: #b7b8c5;
+  }
+  & > div {
+    display: flex;
+    margin-left: 20px;
+    & > h4 {
+      margin: 0px;
+      padding: 5px 0px;
+      font-size: 13px;
+      color: #000000;
+    }
+    & > div.rating-area {
+      width: 210px;
+      margin: 0px;
+    }
+  }
+  & > button.registerbtn {
+    width: 150px;
+    background: linear-gradient(296.64deg, #de5435 11.25%, #ff744d 95.56%);
+    box-shadow: 4px 4px 9.9px #541c0a;
+    color: white;
+    border: none;
+  }
+  & > button.registerbtn:hover {
+    background: linear-gradient(296.64deg, #7c2613 11.25%, #cd3f18 95.56%);
+    box-shadow: 5px 5px 9.9px #391105;
+  }
+}
+// aside product review2
+aside#productReview2 {
+  padding: 40px 20px;
+  position: relative;
+  width: 380px;
+  height: 550px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  & > span {
+    color: gray;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  & > span:hover {
+    color: #f15c2d;
+  }
+  & > h3 {
+    margin: 0px;
+    padding: 0px 50px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  & > form {
+    padding: 10px;
+    & > input {
+      width: 100%;
+      border: 1px solid #eff0f2;
+      border-radius: 12px;
+      color: #9095a9;
+      padding: 5px 10px;
+      margin-top: 5px;
+      font-size: 10px;
+    }
+    & > label {
+      font-family: "Inter";
+      font-size: 12px;
+    }
+    & > div {
+      text-align: center;
+      & > h4 {
+        cursor: pointer;
+        text-align: center;
+        font-family: "Inter";
+        font-size: 12px;
+        color: #dd5327;
+      }
+    }
+  }
+  & > h4 {
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 11px;
+    margin: 5px 40px;
+    color: #9095a9;
+  }
+  & > div#hr {
+    display: flex;
+    margin: 0px 20px;
+    gap: 5px;
+    padding-left: 30px;
+    hr {
+      border: 1px solid #9095a9;
+    }
+    h4 {
+      color: #9095a9;
+      font-size: 15px;
+    }
+  }
+}
+// aside thank you 1
+aside#thankYou1 {
+  padding: 40px 20px;
+  position: relative;
+  width: 380px;
+  height: 400px;
+  background: linear-gradient(296.64deg, #de5435 11.25%, #ff744d 95.56%);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 400px) {
+    left: 10px;
+    top: 100px;
+    transform: none;
+  }
+  & > span {
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  & > span:hover {
+    color: black;
+  }
+  & > h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  & > img#thank2 {
+    width: 250px;
+    margin: 0px 45px;
+  }
+  & > button.registerbtn {
+    width: 60%;
+    background: linear-gradient(
+      180deg,
+      rgba(22, 22, 22, 0.9) 0%,
+      rgba(22, 22, 22, 0.9) 100%
+    );
+    margin: 10px 65px;
+    color: white;
+    border: none;
+  }
+  & > button.registerbtn:hover {
+    background: linear-gradient(
+      180deg,
+      rgba(22, 22, 22, 0.67) 0%,
+      rgba(22, 22, 22, 0.701) 100%
+    );
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.35);
+  }
+}
+// aside confirmation
+aside#confirmation {
+  width: 100%;
+  height: 250px;
+  background: #ffffff;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0px;
+  bottom: 0px;
+  & > div {
+    width: 400px;
+    margin: 0px auto;
+    text-align: center;
+
+    & > span {
+      color: gray;
+      cursor: pointer;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    & > span:hover {
+      color: #f15c2d;
+    }
+    & > h2 {
+      color: #333333;
+      font-size: 20px;
+      font-weight: bold;
+      padding-top: 20px;
+      padding-left: 20px;
+      margin: 0px;
+    }
+    & > div {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 30px;
+      gap: 10px;
+      & > h4 {
+        color: #000000;
+        font-size: 13px;
+      }
+      & > h4.gray {
+        color: #333333b4;
+        text-align: right;
+      }
+      & > h4.black {
+        text-align: left;
+      }
+    }
+    & > button#butRegCon {
+      width: 150px;
+      background: linear-gradient(296.64deg, #de5435 11.25%, #ff744d 95.56%);
+      border: none;
+      margin: 20px 0px;
+      color: white;
+    }
+    & > button#butRegCon:hover {
+      border: 2px solid #b23b17;
+      background: linear-gradient(296.64deg, #9f321a 11.25%, #ff5729 95.56%);
+      box-shadow: 0px 0px 10px 5px rgb(195, 145, 114);
+    }
+  }
+}
+// aside#asideMyBasket
+aside#asideMyBasket {
+  width: 900px;
+  height: auto;
+  padding: 0px;
+  display: none;
+  position: fixed;
+  min-height: 580px;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(296.64deg, #de5435 11.25%, #ff744d 95.56%);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  box-shadow: $boxshadow;
+  @media screen and (max-width: 800px) {
+    height: auto;
+    width: 550px;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 20px 20px;
+    width: 400px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 300px;
+  }
+  & > section.newsEvents {
+    margin: 0px auto;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    box-shadow: $boxshadow;
+    max-width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    & > h1 {
+      font-size: 25px;
+      text-align: center;
+      padding-top: 8px;
+      color: #f15c2d;
+      margin-top: 0px;
+    }
+    & > span#close {
+      position: absolute;
+      color: white;
+      font-size: 28px;
+      margin-top: 9px;
+      font-weight: bold;
+      top: 0px;
+      right: 8%;
+      cursor: pointer;
+      @media screen and (max-width: 600px) {
+        top: -5px;
+        right: 3%;
+      }
+    }
+    & > span#close:hover {
+      color: #f15c2d;
+    }
+  }
+  & > section.myBasket {
+    & > div.orderItem {
+      width: 80%;
+      display: flex;
+      height: 70px;
+      margin: 10px auto;
+      position: relative;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        margin: 0px;
+      }
+
+      & > input {
+        width: 20px;
+        margin-right: 10px;
+      }
+      & > div.div1Add {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        cursor: pointer;
+        @media screen and (max-width: 400px) {
+          width: 60px;
+        }
+        & > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          border: 2px solid #dd5327;
+          @media screen and (max-width: 400px) {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        & > img:hover {
+          border: 3.5px solid #dd5327;
+        }
+      }
+
+      & > h2.orderH2 {
+        color: #ffffff;
+        font-size: 18px;
+        font-family: "Inter";
+        margin: 0px;
+        font-weight: normal;
+        padding-left: 10px;
+        cursor: pointer;
+        @media screen and (max-width: 400px) {
+          font-size: 12px;
+          padding-top: 0px;
+          padding-left: 0px;
+        }
+      }
+      & > h2.orderH2:hover {
+        color: #f15c2d;
+      }
+      & > div.shopCart {
+        @media screen and (max-width: 400px) {
+          padding-left: 0px;
+        }
+        & > h5 {
+          text-align: center;
+        }
+      }
+      & > span {
+        color: gray;
+        cursor: pointer;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        @media screen and (max-width: 400px) {
+          margin: 0px;
+          margin-top: 10px;
+        }
+      }
+      & > span:hover {
+        color: #f15c2d;
+      }
+      & > h2 {
+        font-size: 20px;
+        color: #f8f8f8;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 50px;
+        margin-top: 10px;
+        font-size: 20px;
+        @media screen and (max-width: 400px) {
+          width: 80px;
+          padding-left: 5px;
+          font-size: 17px;
+          padding-right: 2px;
+        }
+      }
+
+      & > div#divAddDut {
+        display: flex;
+        gap: 5px;
+        & > button#butAdd1 {
+          background: linear-gradient(
+            296.64deg,
+            #de5435 11.25%,
+            #ff744d 95.56%
+          );
+        }
+        & > button#butAdd2 {
+          border: 1px solid #33333374;
+          color: #040404;
+        }
+      }
+    }
+    & > div.total {
+      margin: 10px;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+
+      & > h1.inter {
+        display: block;
+        float: left;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 25px;
+        width: 120px;
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+    & > div#divAddDut {
+      gap: 5px;
+      margin: 10px;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      @media screen and (max-width: 600px) {
+        justify-content: flex-start;
+      }
+      & > button {
+        cursor: pointer;
+        padding: 7px 20px;
+        border-radius: 15px;
+        font-family: "Inter";
+        font-size: 13px;
+        color: white;
+        border: none;
+        margin-left: 8px;
+      }
+      & > button.openReg {
+        color: white;
+        background: #f15c2d;
+      }
+      & > button.openReg:hover {
+        color: white;
+        background: linear-gradient(296.64deg, #9f321a 11.25%, #ff5729 95.56%);
+        box-shadow: 0px 0px 10px 5px rgba(195, 145, 114, 0.35);
+      }
+      & > button#butAdd2 {
+        border: 1px solid #33333374;
+        color: #040404;
+      }
+
+      & > button#butAdd2:hover {
+        color: white;
+        background: linear-gradient(296.64deg, #433e3c 11.25%, #8c6053 95.56%);
+      }
+    }
+
+    & > div#whatElse {
+      display: block;
+      margin: 0px auto;
+      text-align: center;
+      width: 90%;
+      & > h2 {
+        font-size: 20px;
+        text-align: center;
+        color: #dd5327;
+      }
+      & > div#elseGal {
+        display: flex;
+        gap: 20px;
+        height: auto;
+        @media screen and (max-width: 600px) {
+          display: grid;
+          grid-template-columns: auto auto;
+          justify-content: center;
+        }
+
+        & > div.elseItem {
+          width: 16%;
+          height: 120px;
+          border-radius: 10px;
+          cursor: pointer;
+          @media screen and (max-width: 600px) {
+            width: 120px;
+            height: 120px;
+          }
+          & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #dd5327;
+          }
+          & > img:hover {
+            border: 4.5px solid #dd5327;
+          }
+        }
+      }
+    }
+  }
+  & > section.goHome {
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    box-shadow: $boxshadow;
+    max-width: 100%;
+    height: auto;
+    & > div {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      @media screen and (max-width: 600px) {
+        gap: 0px;
+      }
+      & > img.sticks {
+        width: 180px;
+        margin-left: 10%;
+        margin-top: 10px;
+        height: 80px;
+        @media screen and (max-width: 600px) {
+          width: 100px;
+          height: 50px;
+          margin-left: 0%;
+          margin-top: 30px;
+        }
+        @media screen and (max-width: 400px) {
+          display: none;
+        }
+      }
+      & > h2 {
+        font-size: 18px;
+        text-align: center;
+        color: #f8f8f8;
+        margin-top: 30px;
+        @media screen and (max-width: 600px) {
+          font-size: 15px;
+        }
+      }
+      & > img.butHand {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        margin: 10px;
+        margin-right: 20%;
+        margin-top: 15px;
+        @media screen and (max-width: 600px) {
+          margin-right: 0%;
+        }
+        @media screen and (max-width: 400px) {
+          margin-right: 5%;
+        }
+      }
+      & > img.butHand:hover {
+        box-shadow: 0px 0px 10px 5px rgba(195, 145, 114, 0.35);
+        border-radius: 50%;
+      }
+    }
+  }
+}

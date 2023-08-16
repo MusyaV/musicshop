@@ -1,0 +1,89 @@
+<section class="newsEvents">
+  <h1 class="mont-alt">Оформление заказа</h1>
+</section>
+
+<section class="myBasket">
+  <h1 class="inter myBasketText">Моя корзина</h1>
+  <div id="contShop" class="inter">Корзина пуста! Вы хотите что-то купить?</div>
+  <div class="total">
+    <h1 class="inter">Итого:</h1>
+    <h1 id="totalMyBasket" class="inter">0 ₪</h1>
+  </div>
+  <h1 class="inter">Ваши данные</h1>
+  <div id="nameEmail">
+    <div>
+      <label for="email">Имя Фамилия</label><br />
+      <input type="email" id="" name="name" /><br />
+    </div>
+    <div>
+      <label for="email">Эл.адрес</label><br />
+      <input type="email" id="email" name="email" /><br />
+    </div>
+    <div>
+      <label id="phone" for="phone">Телефон</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        required
+      /><br />
+    </div>
+    <div>
+      <label for="email">Адрес</label><br />
+      <input type="email" id="email" name="email" /><br />
+    </div>
+  </div>
+  <h4 class="inter">Получение заказа</h4>
+  <form>
+    <input class="custom-checkbox" type="checkbox" id="check1" value="check1" />
+    <label id="check1" for="check1">Забрать в магазине</label><br />
+    <input class="custom-checkbox" type="checkbox" id="check2" value="check2" />
+    <label id="check2" for="check2">Доставка</label><br />
+    <label id="adress" for="adress">Aдрес доставки</label><br />
+    <input type="adress" id="adress" name="adress" /><br />
+    <label id="adress" for="adress">Способ оплаты</label><br />
+    <input class="custom-checkbox" type="checkbox" id="check3" value="check3" />
+    <label id="check3" for="check3">Банковской картой</label>
+    <img id="pay" src="/assets/images/payment-methods.png" alt="" /><br />
+    <label id="numCard" for="numCard">Номер карты</label><br />
+    <input
+      type="numCard"
+      id="numCard"
+      name="numCard"
+      value="0000 0000 0000 0000"
+    /><br />
+    <div id="validity">
+      <div id="val">
+        <label id="val" for="val"> Срок действия</label><br />
+        <input type="val" id="val" name="val" value="mm/yy" />
+      </div>
+      <div id="cvc">
+        <label id="cvc" for="cvc"> CVC</label><br />
+        <input type="cvc" id="cvc" name="cvc" value="000" />
+      </div>
+    </div>
+    <input class="custom-checkbox" type="checkbox" id="check4" value="check4" />
+    <label id="check4" for="check4">PayPal</label><br />
+    <input class="custom-checkbox" type="checkbox" id="check5" value="check5" />
+    <label id="check5" for="check5">Наличными при получении</label>
+    <img id="payPal" src="/assets/images/pay-pal.png" alt="" /><br />
+    <label id="comment" for="comment">Комментарий</label>
+    <textarea id="comment" rows="2" cols="50" name="comment" form="usrform">
+    </textarea>
+    <br /><br />
+  </form>
+
+  <button id="butAdd1Con" type="submit" class="registerbtn">
+    Оформить заказ
+  </button>
+</section>
+
+<section class="goHome">
+  <div>
+    <img class="sticks" src="/assets/images/sticks.png" alt="" />
+    <h2 class="mont-alt">Вернуться на главную страницу</h2>
+    <img class="butHand" src="/assets/images/butHand.png" alt="" />
+  </div>
+</section>
