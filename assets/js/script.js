@@ -52,7 +52,7 @@ function projectInit() {
                   mainHome3HTML += `
               <div class="item${element.item}">
               <h1 class="mont-alt">${element.text}</h1>
-              <img src="/assets/images/${element.svg}-scheme.svg" alt="" />
+              <img src="assets/images/${element.svg}-scheme.svg" alt="" />
             </div>
               `;
                 });
@@ -67,8 +67,8 @@ function projectInit() {
                               <h3 class="mont-alt">${element.desc}</h3>
                             </div>
                             <div class="teachIn2">
-                              <img class="teacherImg" src="/assets/images/teacher-${element.inst}.jpg" alt="" />
-                              <img class="small" src="/assets/images/${element.inst}-small.svg" alt="" />
+                              <img class="teacherImg" src="assets/images/teacher-${element.inst}.jpg" alt="" />
+                              <img class="small" src="assets/images/${element.inst}-small.svg" alt="" />
                             </div>
                           </div>
                             `;
@@ -77,7 +77,7 @@ function projectInit() {
                 // main-home HTML section 7
                 mainHome7HTML = "";
                 result.section7.forEach((element) => {
-                  mainHome7HTML += `<img class="mySlides" src="/assets/images/carousel-${element.num}.jpg" />`;
+                  mainHome7HTML += `<img class="mySlides" src="assets/images/carousel-${element.num}.jpg" />`;
                 });
                 document
                   .querySelector(".w3-display-left")
@@ -99,7 +99,7 @@ function projectInit() {
                 result.section10.forEach((element) => {
                   mainHome10HTML += `
                             <div id="comItem">
-                            <div><img src="/assets/images/com-${element.img}.jpg" alt="" srcset=""></div>
+                            <div><img src="assets/images/com-${element.img}.jpg" alt="" srcset=""></div>
                             <h4 class="inter">${element.text}</h4>
                             </div>
                             `;
@@ -111,7 +111,7 @@ function projectInit() {
                   mainHome12HTML += `
                                 <div class="shop">
                                 <h4>${element.header}</h4>
-                                <img src="/assets/images/catalog-${element.num}.svg" alt="" />
+                                <img src="assets/images/catalog-${element.num}.svg" alt="" />
                               </div>
                           `;
                 });
@@ -121,7 +121,7 @@ function projectInit() {
                 result.section15.forEach((element) => {
                   mainHome15HTML += `
                                 <div class="slide">
-                                <img src="/assets/images/logo-${element.img}.svg" alt="" />
+                                <img src="assets/images/logo-${element.img}.svg" alt="" />
                               </div>
                         `;
                 });
@@ -132,7 +132,7 @@ function projectInit() {
                 result.section17.forEach((element) => {
                   mainHome17HTML += `
                                   <div class="signNews">
-                                  <div><img src="/assets/images/master-${element.img}.jpg" alt="" srcset=""></div>
+                                  <div><img src="assets/images/master-${element.img}.jpg" alt="" srcset=""></div>
                                   <h4 class="inter">Мастер-класс ${element.img}</h4>
                                 </div>
                           `;

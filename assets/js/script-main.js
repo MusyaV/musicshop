@@ -444,9 +444,9 @@ function goToMainGuitar() {
     <div id="foto-item">
     <div class="foto-big fotoIn"><img src="${imageGuitar}"></div>
     <div id="foto-3items">
-      <div><img class="fotoIn" src="/assets/images/fender1.jpg" alt="" srcset=""></div>
-      <div><img class="fotoIn" src="/assets/images/fender2.jpg" alt="" srcset=""></div>
-      <div><img class="fotoIn" src="/assets/images/fender3.jpg" alt="" srcset=""></div>
+      <div><img class="fotoIn" src="assets/images/fender1.jpg" alt="" srcset=""></div>
+      <div><img class="fotoIn" src="assets/images/fender2.jpg" alt="" srcset=""></div>
+      <div><img class="fotoIn" src="assets/images/fender3.jpg" alt="" srcset=""></div>
     </div>
   </div>
                             <div id="dist">

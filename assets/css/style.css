@@ -59,7 +59,7 @@
 html > body {
   margin: 0px;
   height: auto;
-  background-image: url("/assets/images/wall.jpg");
+  background-image: url("assets/images/wall.jpg");
   background-position: center;
   background-repeat: repeat;
   position: relative;
