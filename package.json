@@ -1,0 +1,6 @@
+{
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
