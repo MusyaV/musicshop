@@ -1,5 +1,8 @@
 {
   "description": "",
+  "scripts":{
+    "deploy": "gh-pages -d DrumBit-V10"
+  },
   "devDependencies": {
     "gh-pages": "^6.0.0"
   }
